@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "Yashodhara Urology Center & Multispeciality Hospital, Ambajogai Road, Latur – kidney stone, prostate, male infertility, uro-oncology and paediatric urology care by Dr. Dhiraj Hedda.",
   keywords: ["urologist in Latur", "kidney stone treatment Latur", "andrology Latur", "Yashodhara Hospital Latur", "dental clinic Latur"],
   icons: { icon: "/icons/icon-192.png", apple: "/icons/icon-192.png" },
-  openGraph: { type: "website", locale: "en_IN", siteName: site.shortName, images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: site.name }] },
+  openGraph: { type: "website", locale: "en_IN", siteName: site.shortName, images: [{ url: "/images/og-image.webp", width: 1200, height: 630, alt: site.name }] },
   twitter: { card: "summary_large_image" },
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2">Skip to content</a>
         <JsonLd data={{
-          "@context": "https://schema.org", "@type": "Hospital", name: site.name, url: site.url, image: `${site.url}/images/og-image.jpg`,
+          "@context": "https://schema.org", "@type": "Hospital", name: site.name, url: site.url, image: `${site.url}/images/og-image.webp`,
           telephone: ["+912382227850", "+919021186939"], email: site.email,
           address: { "@type": "PostalAddress", streetAddress: "Bus Stand No. 2 Samor, Behind Yashoda Theatre, Juna Renapur Naka, Ambajogai Road", addressLocality: "Latur", addressRegion: "Maharashtra", addressCountry: "IN" },
           medicalSpecialty: ["Urology"],

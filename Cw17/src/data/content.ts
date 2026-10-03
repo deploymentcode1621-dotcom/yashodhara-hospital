@@ -81,11 +81,11 @@ export const whyChoose = [
 export type Facility = { title: string; text: string; icon: LucideIcon; image: string };
 export const facilities: Facility[] = [
   { title: "Operation Theatre", icon: Scissors, image: "/images/facility-1.jpg", text: "Operation theatre equipped for endoscopic and laparoscopic urological surgeries." },
-  { title: "Endoscopy Unit", icon: Microscope, image: "/images/facility-2.jpg", text: "Cystoscopy, ureteroscopy and other endoscopic diagnosis and treatment." },
-  { title: "Diagnostic Services", icon: Scan, image: "/images/facility-3.jpg", text: "Diagnostic support including uroflowmetry and imaging for accurate evaluation." },
-  { title: "IPD / Patient Care", icon: BedDouble, image: "/images/facility-4.jpg", text: "In-patient care with close monitoring, comfort and post-operative support." },
-  { title: "ESWL – Lithotripsy", icon: Zap, image: "/images/facility-5.jpg", text: "Shock wave lithotripsy to break suitable kidney stones without an operation." },
-  { title: "Clean & Safe Environment", icon: Sparkles, image: "/images/facility-6.jpg", text: "A clean, hygienic hospital environment for patients and families." },
+  { title: "Endoscopy Unit", icon: Microscope, image: "/images/facility-2.jpeg", text: "Cystoscopy, ureteroscopy and other endoscopic diagnosis and treatment." },
+  { title: "Diagnostic Services", icon: Scan, image: "/images/facility-3.jpeg", text: "Diagnostic support including uroflowmetry and imaging for accurate evaluation." },
+  { title: "IPD / Patient Care", icon: BedDouble, image: "/images/facility-4.jpeg", text: "In-patient care with close monitoring, comfort and post-operative support." },
+  { title: "ESWL – Lithotripsy", icon: Zap, image: "/images/facility-5.jpeg", text: "Shock wave lithotripsy to break suitable kidney stones without an operation." },
+  { title: "Clean & Safe Environment", icon: Sparkles, image: "/images/facility-6.jpeg", text: "A clean, hygienic hospital environment for patients and families." },
 ];
 
 export const dentalServices = [
@@ -104,16 +104,16 @@ export const dentalServices = [
 export type GalleryItem = { src: string; alt: string; category: "Hospital" | "Facilities" | "Procedures" | "Dental" };
 /** Replace the files in /public/images (same filenames) or edit the list below. */
 export const gallery: GalleryItem[] = [
-  { src: "/images/gallery-1.jpg", alt: "Yashodhara Hospital building, Latur", category: "Hospital" },
-  { src: "/images/gallery-2.jpg", alt: "Hospital reception area", category: "Hospital" },
+  { src: "/images/gallery-1.jpeg", alt: "Yashodhara Hospital building, Latur", category: "Hospital" },
+  { src: "/images/gallery-2.webp", alt: "Hospital reception area", category: "Hospital" },
   { src: "/images/gallery-3.jpg", alt: "Operation theatre", category: "Facilities" },
-  { src: "/images/gallery-4.jpg", alt: "Endoscopy suite", category: "Facilities" },
+  { src: "/images/gallery-4.jpeg", alt: "Endoscopy suite", category: "Facilities" },
   { src: "/images/gallery-5.jpg", alt: "Patient room", category: "Facilities" },
-  { src: "/images/gallery-6.jpg", alt: "Diagnostic room", category: "Facilities" },
+  { src: "/images/gallery-6.png", alt: "Diagnostic room", category: "Facilities" },
   { src: "/images/gallery-7.jpg", alt: "Dental treatment chair", category: "Dental" },
-  { src: "/images/gallery-8.jpg", alt: "Yashodhara Dental Clinic", category: "Dental" },
+  { src: "/images/gallery-8.jpeg", alt: "Yashodhara Dental Clinic", category: "Dental" },
   { src: "/images/gallery-9.jpg", alt: "Consultation room", category: "Hospital" },
-  { src: "/images/gallery-10.jpg", alt: "ESWL lithotripsy unit", category: "Procedures" },
+  { src: "/images/gallery-10.jpeg", alt: "ESWL lithotripsy unit", category: "Procedures" },
   { src: "/images/gallery-11.jpg", alt: "Hospital corridor", category: "Hospital" },
-  { src: "/images/gallery-12.jpg", alt: "Hospital team", category: "Procedures" },
+  { src: "/images/gallery-12.jpeg", alt: "Hospital team", category: "Procedures" },
 ];

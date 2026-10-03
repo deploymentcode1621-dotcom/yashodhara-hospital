@@ -130,7 +130,7 @@ export default function HomePage() {
         <div className="container-x grid items-center gap-10 lg:grid-cols-[1fr_1.3fr]">
           <Reveal>
             <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl shadow-xl">
-              <Image src="/images/doctor.jpg" alt={`${doctor.name}, consultant urologist`} fill sizes="(min-width:1024px) 30vw, 80vw" className="object-cover" />
+              <Image src="/images/Doctor.avif" alt={`${doctor.name}, consultant urologist`} fill sizes="(min-width:1024px) 30vw, 80vw" className="object-cover" />
             </div>
           </Reveal>
           <Reveal delay={100}>

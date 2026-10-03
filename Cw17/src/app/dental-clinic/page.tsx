@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Dental Clinic in Latur",
   description: "Yashodhara Multispeciality Dental Clinic, Ambajogai Road, Latur – root canal, implants, crowns & bridges, orthodontics, scaling, RVG X-ray and more by Dr. Anushree Hedda, B.D.S.",
   alternates: { canonical: "/dental-clinic" },
-  openGraph: { title: "Yashodhara Multispeciality Dental Clinic, Latur", url: "/dental-clinic", images: ["/images/dental-hero.jpg"] },
+  openGraph: { title: "Yashodhara Multispeciality Dental Clinic, Latur", url: "/dental-clinic", images: ["/images/dental-hero.avif"] },
 };
 
 const features = [
@@ -30,7 +30,7 @@ export default function DentalPage() {
     <>
       <JsonLd data={{ "@context": "https://schema.org", "@type": "Dentist", name: dentalSite.name, telephone: "+912382227850",
         address: { "@type": "PostalAddress", streetAddress: "Opposite Kayamkhani Function Hall, Sham Nagar, Ambajogai Road", addressLocality: "Latur", addressRegion: "Maharashtra", addressCountry: "IN" } }} />
-      <PageHero dental title="Dental Clinic" text={`${dentalSite.name} – complete dental care in Latur.`} image="/images/dental-hero.jpg" />
+      <PageHero dental title="Dental Clinic" text={`${dentalSite.name} – complete dental care in Latur.`} image="/images/dental-hero.avif" />
 
       <section className="section">
         <div className="container-x grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
