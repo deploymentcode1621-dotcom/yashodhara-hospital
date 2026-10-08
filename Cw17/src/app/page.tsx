@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Award, CalendarCheck, CheckCircle2, Clock, Mail, MapPin, MessageCircle, Phone, Quote } from "lucide-react";
+import { ArrowRight, CheckCircle2, Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
@@ -9,6 +9,7 @@ import FacilityCard from "@/components/FacilityCard";
 import GalleryGrid from "@/components/GalleryGrid";
 import CTASection from "@/components/CTASection";
 import MapEmbed from "@/components/MapEmbed";
+import HomeHero from "@/components/HomeHero";
 import { doctor, site, whatsappLink } from "@/data/site";
 import { dentalServices, facilities, gallery, quickCategories, services, whyChoose } from "@/data/content";
 
@@ -23,52 +24,15 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-cream via-white to-plum-50">
-        <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-accent/15 blur-3xl" aria-hidden />
-        <div className="container-x relative grid items-center gap-10 py-12 md:py-20 lg:grid-cols-2">
-          <div className="animate-fade-up">
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-brand-red">Expert Care. Modern Technology. Better Tomorrow.</p>
-            <h1 className="text-4xl font-extrabold leading-[1.1] text-plum-900 sm:text-5xl lg:text-6xl">
-              Complete Urology &amp; <span className="text-brand-red">Andrology Care</span> in Latur
-            </h1>
-            <p className="mt-5 max-w-xl text-lg leading-relaxed text-slate-600">
-              Advanced diagnosis and minimally invasive treatment for kidney, bladder, prostate, urinary tract and male reproductive health – led by Dr. Dhiraj Hedda, M.Ch. (Urology).
-            </p>
-            <ul className="mt-6 grid max-w-xl grid-cols-2 gap-3 text-sm font-semibold text-plum-800">
-              {["Advanced Technology", "Minimally Invasive Treatment", "Personalised Care", "Patient-Centred Approach"].map((t) => (
-                <li key={t} className="flex items-center gap-2"><CheckCircle2 size={18} className="text-accent-600" aria-hidden />{t}</li>
-              ))}
-            </ul>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/contact#appointment" className="btn-primary"><CalendarCheck size={20} aria-hidden />Book an Appointment</Link>
-              <Link href="/contact" className="btn-outline">Contact Us</Link>
-              <a href={site.phoneHref} className="btn-accent"><Phone size={20} aria-hidden />Call {site.phone}</a>
-            </div>
-          </div>
-          <div className="relative animate-fade-up">
-            <div className="relative aspect-[5/4] overflow-hidden rounded-[2rem] shadow-2xl shadow-plum-900/25 ring-8 ring-white">
-              <Image src="/images/hospital-hero.png" alt="Yashodhara Urology & Multispeciality Hospital building, Latur" fill priority sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" />
-            </div>
-            <div className="absolute -bottom-5 left-4 animate-float rounded-2xl bg-plum-800 px-5 py-4 text-white shadow-xl sm:-left-6">
-              <Award className="mb-1 text-accent" aria-hidden />
-              <p className="text-2xl font-extrabold leading-none">11 Years</p>
-              <p className="text-xs text-plum-100">of Urological Care · 2015–2025</p>
-            </div>
-            <div className="absolute -top-4 right-3 hidden max-w-[14rem] rounded-2xl bg-white p-4 shadow-xl sm:block">
-              <Quote size={18} className="text-accent-600" aria-hidden />
-              <p className="mt-1 text-sm font-semibold text-plum-900">{site.slogan}</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HomeHero />
 
       {/* QUICK CATEGORIES */}
-      <section aria-label="Treatment categories" className="relative z-10 -mt-2 pb-6">
+      <section aria-label="Treatment categories" className="relative z-10 -mt-12 pb-6">
         <div className="container-x">
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
             {quickCategories.map(({ label, icon: Icon }) => (
               <li key={label}>
-                <Link href="/services" className="card flex h-full flex-col items-center gap-2 p-4 text-center">
+                <Link href="/services" className="card flex h-full flex-col items-center gap-2 p-4 text-center shadow-xl shadow-plum-900/10 transition hover:-translate-y-1">
                   <span className="grid h-12 w-12 place-items-center rounded-full bg-plum-50 text-plum-700"><Icon size={22} aria-hidden /></span>
                   <span className="text-xs font-bold text-plum-900">{label}</span>
                 </Link>
