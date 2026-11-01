@@ -44,9 +44,45 @@ export default function Footer() {
           <a href={site.mapsLink} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-sm font-semibold text-accent underline">View on Google Maps</a>
         </div>
       </div>
-      <div className="border-t border-white/10 py-5 text-center text-sm text-plum-200">
-        © 2026 {site.shortName}, Latur. All Rights Reserved.
-      </div>
+      <div className="border-t border-white/10">
+  <div className="container-x flex flex-col items-center justify-between gap-5 py-5 lg:flex-row">
+    <p className="text-center text-sm text-plum-200 lg:text-left">
+      © {new Date().getFullYear()} {site.shortName}, Latur.
+      All Rights Reserved.
+    </p>
+
+    <a
+      href="https://www.codewinxitsolution.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Designed and developed by CodeWinx IT Solutions — opens in a new tab"
+      className="group inline-flex items-center gap-3 rounded-xl border border-accent/50 bg-white/10 px-4 py-3 shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:bg-white/15 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+    >
+      <span
+        aria-hidden="true"
+        className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent text-base font-bold text-plum-900 shadow-md"
+      >
+        &lt;/&gt;
+      </span>
+
+      <span className="text-left">
+        <span className="block text-[10px] font-medium uppercase tracking-widest text-plum-200">
+          Designed & Developed by
+        </span>
+        <span className="block text-sm font-bold tracking-wide text-white transition-colors group-hover:text-accent">
+          CodeWinx IT Solutions
+        </span>
+      </span>
+
+      <span
+        aria-hidden="true"
+        className="ml-1 text-xl text-accent transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+      >
+        ↗
+      </span>
+    </a>
+  </div>
+</div>
     </footer>
   );
 }
