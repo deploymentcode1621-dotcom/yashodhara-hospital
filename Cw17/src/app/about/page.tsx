@@ -47,12 +47,12 @@ const placeholder = (label: string) =>
   )}`;
 
 const IMG = {
-  hero: "/images/about-hospital.jpg", // REAL – operation theatre
-  doctor: "/images/Doctor.avif", // REAL – Dr. Dhiraj Hedda
-  story: placeholder("Hospital Exterior"), // TODO: replace
-  showcaseLarge: placeholder("Modern Operation Theatre"), // TODO: replace
-  showcaseA: placeholder("Advanced Endoscopy"), // TODO: replace
-  showcaseB: placeholder("Patient-Friendly Spaces"), // TODO: replace
+  hero: "/images/about-hospital.jpg",
+  doctor: "/images/Doctor.avif",
+  story: "/images/dental-clinic.jpg",
+  showcaseLarge: "/images/gallery-3.jpg",
+  showcaseA: "/images/gallery-4.jpeg",
+  showcaseB: "/images/gallery-6.png",
 } as const;
 
 const PHONE_DISPLAY = "02382-227850";
