@@ -21,15 +21,15 @@ export const metadata: Metadata = {
 /* Use the same files your Home page already uses.                      */
 /* ------------------------------------------------------------------ */
 const IMG = {
-  hero: "/images/facilities/operation-theatre.jpg",
+  hero: "/images/facilities/gallery-3.jpg",
   ot: "/images/facilities/operation-theatre.jpg",
-  endoscopy: "/images/facilities/endoscopy-unit.jpg",
-  diagnostics: "/images/facilities/diagnostics.jpg",
-  ipd: "/images/facilities/patient-room.jpg",
+  endoscopy: "/images/facilities/gallery-8.jpeg",
+  diagnostics: "/images/facilities/facility-4.jpeg",
+  ipd: "/images/facilities/gallery-6.png",
   eswl: "/images/facilities/eswl.jpg",
-  clean: "/images/facilities/hospital-interior.jpg",
+  clean: "/images/facilities/gallery-9.jpg",
   reception: "/images/facilities/reception.jpg",
-  exterior: "/images/facilities/hospital-building.jpg",
+  exterior: "/images/facilities/dental-clinic.jpg",
 };
 const PHONE = "tel:+912382227500"; // TODO: use your real hospital number
 const WHATSAPP = "https://wa.me/919921130025"; // TODO: use your real WhatsApp number
