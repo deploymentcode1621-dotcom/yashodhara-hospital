@@ -51,9 +51,9 @@ const placeholder = (label: string) =>
 const IMG = {
   hero: "/images/about-hospital.jpg", // REAL
   doctor: "/images/Doctor.avif", // REAL
-  endoscopy: placeholder("Endoscopic Procedures"), // TODO
-  surgery: placeholder("Minimally Invasive Surgery"), // TODO
-  diagnostics: placeholder("Diagnostic Equipment"), // TODO
+  endoscopy: "/images/endoscopic-procedures.png", // TODO
+  surgery: "/images/minimally-invasive-surgery.png",// TODO
+  diagnostics: "/images/diagnostic-equipment.png", // TODO
 } as const;
 
 const PHONE_DISPLAY = "02382-227850";
