@@ -79,15 +79,15 @@ function Photo({ src, label, className = "", sizes, priority = false }: { src: s
 
 export default function DentalPage() {
   const dg = gallery.filter((g) => g.category === "Dental");
-  const IMG = {
-    clinic: "/images/dental-clinic.jpg",
-    chair: pic(dg, 0, "/images/dental/dental-chair.jpg"),
-    treatment: pic(dg, 1, "/images/dental/treatment-area.jpg"),
-    xray: "/images/dental/dental-xray.jpg", // TODO
-    equipment: "/images/dental/equipment.jpg", // TODO
-    reception: "/images/dental/reception.jpg", // TODO
-    doctor: "/images/dr-anushree-hedda.jpg", // TODO
-  };
+ const IMG = {
+  clinic: "/images/dental-clinic.jpg",
+  chair: "/images/dental/dental-chair.jpg",
+  treatment: "/images/dental/treatment-area.jpg",
+  xray: "/images/dental/dental-xray.jpg",
+  equipment: "/images/dental/equipment.jpg",
+  reception: "/images/dental/reception.jpg",
+  doctor: "/images/dr-anushree-hedda.jpg",
+};
 
   return (
     <>
