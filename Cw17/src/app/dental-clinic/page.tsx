@@ -81,11 +81,11 @@ export default function DentalPage() {
   const dg = gallery.filter((g) => g.category === "Dental");
  const IMG = {
   clinic: "/images/dental-clinic.jpg",
-  chair: "/images/dental/dental-chair.jpg",
-  treatment: "/images/dental/treatment-area.jpg",
-  xray: "/images/dental/dental-xray.jpg",
-  equipment: "/images/dental/equipment.jpg",
-  reception: "/images/dental/reception.jpg",
+  chair: "/images/dental-chair.jpg",
+  treatment: "/images/treatment-area.jpg",
+  xray: "/images/dental-xray.jpg",
+ equipment: "/images/dental-equipment-new.jpg",
+  reception: "/images/reception.jpg",
   doctor: "/images/dr-anushree-hedda.jpg",
 };
 

@@ -21,15 +21,15 @@ export const metadata: Metadata = {
 /* Use the same files your Home page already uses.                      */
 /* ------------------------------------------------------------------ */
 const IMG = {
-  hero: "/images/facilities/gallery-3.jpg",
-  ot: "/images/facilities/operation-theatre.jpg",
-  endoscopy: "/images/facilities/gallery-8.jpeg",
-  diagnostics: "/images/facilities/facility-4.jpeg",
-  ipd: "/images/facilities/gallery-6.png",
-  eswl: "/images/facilities/eswl.jpg",
-  clean: "/images/facilities/gallery-9.jpg",
-  reception: "/images/facilities/reception.jpg",
-  exterior: "/images/facilities/dental-clinic.jpg",
+  hero: "/images/gallery-3.jpg",
+  ot: "/images/operation-theatre.jpg",
+  endoscopy: "/images/gallery-8.jpeg",
+  diagnostics: "/images/facility-4.jpeg",
+  ipd: "/images/gallery-6.png",
+  eswl: "/images/eswl.jpg",
+  clean: "/images/gallery-9.jpg",
+  reception: "/images/reception.jpg",
+  exterior: "/images/dental-clinic.jpg",
 };
 const PHONE = "tel:+912382227500"; // TODO: use your real hospital number
 const WHATSAPP = "https://wa.me/919921130025"; // TODO: use your real WhatsApp number
@@ -207,7 +207,7 @@ export default function FacilitiesPage() {
           </Reveal>
           <div className="mt-10 grid items-center gap-8 lg:mt-14 lg:grid-cols-2 lg:gap-16">
             <Reveal className="group relative min-w-0">
-              <Photo src={IMG.ot} alt="Modern operation theatre" sizes="(min-width:1024px) 50vw, 100vw" className="aspect-[4/3] rounded-3xl shadow-xl" />
+              <Photo src="/images/operation-theatre-highlight.jpg" alt="Modern operation theatre" sizes="(min-width:1024px) 50vw, 100vw" className="aspect-[4/3] rounded-3xl shadow-xl" />
               <div className="pointer-events-none absolute -right-3 -top-3 hidden h-full w-full rounded-3xl border-2 border-accent/30 lg:block" aria-hidden />
             </Reveal>
             <Reveal delay={100} className="min-w-0">
